@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scoops & Smiles Ice Cream Shop</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, serif;
+      background: #fff8f0;
+      color: #3b2a1a;
+    }
+
+    header {
+      background: #f9a8d4;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #831843;
+      letter-spacing: 0.03em;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #9d174d;
+      margin-top: 0.4rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #fce7f3;
+      padding: 0.75rem 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #9d174d;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to bottom, #fce7f3, #fff8f0);
+    }
+
+    .hero h2 { font-size: 1.8rem; color: #831843; margin-bottom: 0.75rem; }
+    .hero p  { font-size: 1rem; max-width: 520px; margin: 0 auto 1.5rem; }
+
+    .btn {
+      display: inline-block;
+      background: #ec4899;
+      color: #fff;
+      padding: 0.65rem 1.6rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .btn:hover { background: #db2777; }
+
+    .flavors {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .flavors h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      color: #831843;
+      margin-bottom: 1.5rem;
+    }
+
+    .flavor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .flavor-card {
+      background: #fff;
+      border: 2px solid #f9a8d4;
+      border-radius: 12px;
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+
+    .flavor-card .icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .flavor-card h3   { font-size: 1rem; color: #831843; margin-bottom: 0.25rem; }
+    .flavor-card p    { font-size: 0.85rem; color: #6b4f3a; }
+
+    .info {
+      background: #fce7f3;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin-top: 2rem;
+    }
+
+    .info h2 { font-size: 1.5rem; color: #831843; margin-bottom: 1rem; }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .info-item h3 { font-size: 1rem; color: #9d174d; margin-bottom: 0.3rem; }
+    .info-item p  { font-size: 0.9rem; }
+
+    footer {
+      text-align: center;
+      padding: 1.25rem;
+      background: #f9a8d4;
+      color: #831843;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍦 Scoops &amp; Smiles</h1>
+    <p>Handcrafted ice cream made with love</p>
+  </header>
+
+  <nav>
+    <a href="#flavors">Flavors</a>
+    <a href="#info">Visit Us</a>
+    <a href="#info">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Fresh Scoops Every Day</h2>
+    <p>We churn small batches of artisan ice cream using locally sourced dairy and seasonal ingredients.</p>
+    <a class="btn" href="#flavors">See Our Flavors</a>
+  </section>
+
+  <section class="flavors" id="flavors">
+    <h2>Today's Flavors</h2>
+    <div class="flavor-grid">
+      <div class="flavor-card">
+        <div class="icon">🍓</div>
+        <h3>Strawberry Dream</h3>
+        <p>Fresh strawberries and cream</p>
+      </div>
+      <div class="flavor-card">
+        <div class="icon">🍫</div>
+        <h3>Dark Chocolate</h3>
+        <p>Rich Belgian chocolate</p>
+      </div>
+      <div class="flavor-card">
+        <div class="icon">🍵</div>
+        <h3>Matcha Swirl</h3>
+        <p>Japanese matcha with honey</p>
+      </div>
+      <div class="flavor-card">
+        <div class="icon">🫐</div>
+        <h3>Blueberry Bliss</h3>
+        <p>Wild blueberries and vanilla</p>
+      </div>
+      <div class="flavor-card">
+        <div class="icon">🥜</div>
+        <h3>Peanut Butter</h3>
+        <p>Creamy peanut butter fudge</p>
+      </div>
+      <div class="flavor-card">
+        <div class="icon">🍋</div>
+        <h3>Lemon Sorbet</h3>
+        <p>Zesty and dairy-free</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info" id="info">
+    <h2>Visit Us</h2>
+    <div class="info-grid">
+      <div class="info-item">
+        <h3>📍 Address</h3>
+        <p>42 Cherry Lane<br />Sweetville, CA 90210</p>
+      </div>
+      <div class="info-item">
+        <h3>🕐 Hours</h3>
+        <p>Mon–Fri: 11am – 9pm<br />Sat–Sun: 10am – 10pm</p>
+      </div>
+      <div class="info-item">
+        <h3>📞 Contact</h3>
+        <p>(555) 123-4567<br />hello@scoopsandsmiles.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Scoops &amp; Smiles Ice Cream Shop. All rights reserved.
+  </footer>
+
+</body>
+</html>
